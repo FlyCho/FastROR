@@ -23,6 +23,19 @@ git clone -b dev https://github.com/FlyCho/FastROR.git
 ```
 python score_geo_map_prepare.py --dataset_dir=/path/to/your/training/set
 ```
+after generated the geometric and score map
+the dataset root will be ...
+```
+├── datasets
+│   ├── train
+│       ├── Annotations
+│       ├── JPEGImages
+|       ├── geo_map
+|       ├── score_map
+│   ├── test
+│       ├── Annotations
+│       ├── JPEGImages
+```
 ### Two steps training strategy
 We firstly train the localization network and then train the whole network, including the localization and recognition network.
 ### First step : training the localization network
