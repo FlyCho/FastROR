@@ -11,9 +11,6 @@ git clone -b dev https://github.com/FlyCho/FastROR.git
 ```
 ### Dataset fromat
 ```
-The data is VOC format, reference [here](sample.xml)       
-Data path format  ($R2CNN_ROOT/data/io/divide_data.py)    
-```
 ├── datasets
 │   ├── train
 │       ├── Annotations
@@ -21,7 +18,6 @@ Data path format  ($R2CNN_ROOT/data/io/divide_data.py)
 │    ├── test
 │       ├── Annotations
 │       ├── JPEGImages
-``` 
 ```
 ### Generate the geometric and score map
 ```
