@@ -20,8 +20,11 @@ git clone -b dev https://github.com/FlyCho/FastROR.git
 │       ├── JPEGImages
 ```
 `gt_img_X.txt`-file for each `img_X.jpg`-image-file
+
 `gt_img_X.txt` have object number and object four corner coordinates on `img_X.jpg`, for each object in new line:
+
 `<x_P1>, <y_P1>, <x_P2>, <y_P2>, <x_P3>, <y_P3>, <x_P4>, <y_P4>, <object-class>`
+
 For example for `img_1.jpg` you will be created `gt_img_1.txt` containing:
 ```
 180,262,220,137,381,188,345,317,0
