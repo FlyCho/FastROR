@@ -15,7 +15,7 @@ git clone -b dev https://github.com/FlyCho/FastROR.git
 │   ├── train
 │       ├── Annotations
 │       ├── JPEGImages
-│    ├── test
+│   ├── test
 │       ├── Annotations
 │       ├── JPEGImages
 ```
