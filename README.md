@@ -9,6 +9,20 @@ The end-to-end framework for blister identification task
 pip install -r requirements.txt
 git clone -b dev https://github.com/FlyCho/FastROR.git
 ```
+### Dataset fromat
+```
+The data is VOC format, reference [here](sample.xml)       
+Data path format  ($R2CNN_ROOT/data/io/divide_data.py)    
+```
+├── datasets
+│   ├── train
+│       ├── Annotations
+│       ├── JPEGImages
+│    ├── test
+│       ├── Annotations
+│       ├── JPEGImages
+``` 
+```
 ### Generate the geometric and score map
 ```
 python score_geo_map_prepare.py --dataset_dir=/path/to/your/training/set
