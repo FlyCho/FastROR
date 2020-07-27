@@ -1,73 +1,31 @@
-# Fast_ROR
-### Introduction
-The end-to-end framework for blister identification task
-### Install
-+ Python3.6
-+ tensorflow 1.12.0
-+ openCV
+# Blister package datasets collecting
+### Check camera index
 ```
-pip install -r requirements.txt
-git clone -b dev https://github.com/FlyCho/FastROR.git
+python cam_num_check.py
 ```
-### Dataset fromat
+### Collecting blister package images with ground-truth of type
 ```
-├── datasets
-│   ├── train
-│       ├── Annotations
-│       ├── JPEGImages
-│   ├── test
-│       ├── Annotations
-│       ├── JPEGImages
+python Blister_camera.py
 ```
-`gt_img_X.txt`-file for each `img_X.jpg`-image-file
+the blister packages example images is at [blister_ex](https://drive.google.com/drive/folders/1zLEZYv4o7B7UUnxiDYkDwWGPqxTnLAlP?usp=sharing)
+```
+press "D" to start collecting vedio
 
-`gt_img_X.txt` have object number and object four corner coordinates on `img_X.jpg`, for each object in new line:
+press "S" to stop collecting vedio
 
-`<x_P1>, <y_P1>, <x_P2>, <y_P2>, <x_P3>, <y_P3>, <x_P4>, <y_P4>, <object-class>`
+press "E" to save the vedio & next type of blister package
 
-For example for `img_1.jpg` you will be created `gt_img_1.txt` containing:
+press "F" to save the single image
 ```
-180,262,220,137,381,188,345,317,0
-197,888,106,601,478,533,526,788,0
+### Picking the image from the vedio
 ```
-### Generate the geometric and score map
+python video2img.py
 ```
-python score_geo_map_prepare.py --dataset_dir=/path/to/your/training/set
+### Random pick 100 images from each type of blister packages
 ```
-after generated the geometric and score map
-the dataset root will be ...
+python rand100.py
 ```
-├── datasets
-│   ├── train
-│       ├── Annotations
-│       ├── JPEGImages
-|       ├── geo_map
-|       ├── score_map
-│   ├── test
-│       ├── Annotations
-│       ├── JPEGImages
+### Labeling each type of blister packages four corners
 ```
-### Two steps training strategy
-We firstly train the localization network and then train the whole network, including the localization and recognition network.
-### First step : training the localization network
+python label_tool.py
 ```
-python localization_train.py --gpu_list='0' --learning_rate=0.0001 --train_stage=2 --training_data_dir=/path/to/your/training images/ --training_gt_data_dir=/path/to/your/training annotations/
-```
-### Second step : training the whole network
-```
-python loc_recog_train.py --gpu_list='0' --learning_rate=0.0001 --train_stage=2 --training_data_dir=/path/to/your/training images/ --training_gt_data_dir=/path/to/your/training annotations/
-```
-### Test
-```
-python loc_recog_test.py --gpu_list='0' --test_data_path='/path/to/your/testing images/' --test_gt_path='/path/to/your/testing annotations/' --checkpoint_path='checkpoints/'
-```
-### Demo
-```
-python loc_recog_demo.py
-```
-### Examples
-![image_1](demo_image/identify_result.jpg)
-
-### Reference
-+ [FOTS_TF](https://github.com/Pay20Y/FOTS_TF/tree/dev)
-Thanks for the authors!
