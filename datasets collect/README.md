@@ -7,7 +7,7 @@ python cam_num_check.py
 ```
 python Blister_camera.py
 ```
-the blister packages example images is at [blister_ex](https://drive.google.com/drive/folders/1zLEZYv4o7B7UUnxiDYkDwWGPqxTnLAlP?usp=sharing)
+the blister packages example images is at [blister_ex](https://drive.google.com/drive/folders/1zLEZYv4o7B7UUnxiDYkDwWGPqxTnLAlP?usp=sharing).
 ```
 press "D" to start collecting vedio
 
@@ -33,5 +33,6 @@ python label_tool.py
 ```
 python generating synthetic dataset.py
 ```
-NB folder is at [NB](https://drive.google.com/drive/folders/1aweG9CT1gssKQNHbrPR5zkiitlPkZgEH?usp=sharing)
-HAND2.jpg is at [HAND](https://drive.google.com/file/d/1nIrbHT5f7V94jnnbbNgln7ZWbUL6bLbH/view?usp=sharing)
+NB folder is at [NB](https://drive.google.com/drive/folders/1aweG9CT1gssKQNHbrPR5zkiitlPkZgEH?usp=sharing).
+
+HAND2.jpg is at [HAND](https://drive.google.com/file/d/1nIrbHT5f7V94jnnbbNgln7ZWbUL6bLbH/view?usp=sharing).
