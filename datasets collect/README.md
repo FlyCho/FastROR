@@ -16,9 +16,11 @@ press "E" to save the vedio & next type of blister package
 
 press "F" to save the single image
 ```
-### Examples
-![image_1](demo_image/identify_result.jpg)
-
-### Reference
-+ [FOTS_TF](https://github.com/Pay20Y/FOTS_TF/tree/dev)
-Thanks for the authors!
+### picking the image from the vedio
+```
+python video2img.py
+```
+### random pick 100 images from each type of blister packages
+```
+python rand100.py
+```
