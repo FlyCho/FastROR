@@ -16,11 +16,11 @@ press "E" to save the vedio & next type of blister package
 
 press "F" to save the single image
 ```
-### picking the image from the vedio
+### Picking the image from the vedio
 ```
 python video2img.py
 ```
-### random pick 100 images from each type of blister packages
+### Random pick 100 images from each type of blister packages
 ```
 python rand100.py
 ```
