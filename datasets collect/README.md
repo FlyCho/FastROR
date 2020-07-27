@@ -3,9 +3,18 @@
 ```
 python cam_num_check.py
 ```
-### Demo
+### Collecting blister package images
 ```
-python loc_recog_demo.py
+python Blister_camera.py
+```
+```
+press "D" to start collecting vedio
+
+press "S" to stop collecting vedio
+
+press "E" to save the vedio & next type of blister package
+
+press "F" to save the single image
 ```
 ### Examples
 ![image_1](demo_image/identify_result.jpg)
