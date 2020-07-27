@@ -29,3 +29,9 @@ python rand100.py
 ```
 python label_tool.py
 ```
+### Generating the synthetic dataset from real images with ground-truth
+```
+python generating synthetic dataset.py
+```
+NB folder is at [NB](https://drive.google.com/drive/folders/1aweG9CT1gssKQNHbrPR5zkiitlPkZgEH?usp=sharing)
+HAND2.jpg is at [HAND](https://drive.google.com/file/d/1nIrbHT5f7V94jnnbbNgln7ZWbUL6bLbH/view?usp=sharing)
