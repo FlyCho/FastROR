@@ -57,9 +57,9 @@ python localization_train.py --gpu_list='0' --learning_rate=0.0001 --train_stage
 ```
 python loc_recog_train.py --gpu_list='0' --learning_rate=0.0001 --train_stage=2 --training_data_dir=/path/to/your/training images/ --training_gt_data_dir=/path/to/your/training annotations/
 ```
-### Test
+### val
 ```
-python loc_recog_test.py --gpu_list='0' --test_data_path='/path/to/your/testing images/' --test_gt_path='/path/to/your/testing annotations/' --checkpoint_path='checkpoints/'
+python loc_recog_val.py --gpu_list='0' --test_data_path='/path/to/your/testing images/' --test_gt_path='/path/to/your/testing annotations/' --checkpoint_path='checkpoints/'
 ```
 ### Demo
 ```
