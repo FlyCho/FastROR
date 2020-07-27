@@ -1,7 +1,7 @@
 # Blister package datasets collecting
 ### Check camera index
 ```
-python cam_check.py
+python cam_num_check.py
 ```
 ### Demo
 ```
