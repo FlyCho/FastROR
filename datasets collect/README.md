@@ -3,7 +3,7 @@
 ```
 python cam_num_check.py
 ```
-### Collecting blister package images
+### Collecting blister package images with ground-truth of type
 ```
 python Blister_camera.py
 ```
@@ -23,4 +23,8 @@ python video2img.py
 ### Random pick 100 images from each type of blister packages
 ```
 python rand100.py
+```
+### Labeling each type of blister packages four corners
+```
+python label_tool.py
 ```
